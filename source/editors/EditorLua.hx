@@ -39,7 +39,7 @@ class EditorLua {
 
 	var lePlayState:editors.EditorPlayState = null;
 
-	public function new(script:String) {
+	public function new(ModChart:String) {
 		#if LUA_ALLOWED
 		lua = LuaL.newstate();
 		LuaL.openlibs(lua);
@@ -48,15 +48,15 @@ class EditorLua {
 		//trace('Lua version: ' + Lua.version());
 		//trace("LuaJIT version: " + Lua.versionJIT());
 
-		var result:Dynamic = LuaL.dofile(lua, script);
+		var result:Dynamic = LuaL.dofile(lua, ModChart);
 		var resultStr:String = Lua.tostring(lua, result);
 		if(resultStr != null && result != 0) {
 			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA script!');
-			trace('Error on .LUA script! ' + resultStr);
+			trace('Error on .LUA ModChart! ' + resultStr);
 			lua = null;
 			return;
 		}
-		trace('Lua file loaded succesfully:' + script);
+		trace('Lua file loaded succesfully:' + ModChart);
 
 		var curState:Dynamic = FlxG.state;
 		lePlayState = curState;
