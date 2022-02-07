@@ -18,11 +18,11 @@ using StringTools;
 class MasterEditorMenu extends MusicBeatState
 {
 	var options:Array<String> = [
-		'Week Editor',
-		'Menu Character Editor',
-		'Dialogue Editor',
-		'Dialogue Portrait Editor',
-		'Character Editor'
+		'Editor de semana',
+		'Menu de personagem editor',
+		'editor de Dialogo',
+		'Retrato de dialogo editor',
+		'Personagem editor'
 	];
 	private var grpTexts:FlxTypedGroup<Alphabet>;
 
@@ -80,15 +80,15 @@ class MasterEditorMenu extends MusicBeatState
 		if (controls.ACCEPT)
 		{
 			switch(options[curSelected]) {
-				case 'Character Editor':
+				case 'Personagem editor':
 					LoadingState.loadAndSwitchState(new CharacterEditorState(Character.DEFAULT_CHARACTER, false));
-				case 'Week Editor':
+				case 'Editor de semana':
 					MusicBeatState.switchState(new WeekEditorState());
-				case 'Menu Character Editor':
+				case 'Menu de personagem editor':
 					MusicBeatState.switchState(new MenuCharacterEditorState());
-				case 'Dialogue Portrait Editor':
+				case 'Retrato de dialogo editor':
 					LoadingState.loadAndSwitchState(new DialogueCharacterEditorState(), false);
-				case 'Dialogue Editor':
+				case 'editor de dialogo':
 					LoadingState.loadAndSwitchState(new DialogueEditorState(), false);
 			}
 			FlxG.sound.music.volume = 0;
