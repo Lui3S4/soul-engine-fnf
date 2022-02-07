@@ -51,7 +51,7 @@ class EditorLua {
 		var result:Dynamic = LuaL.dofile(lua, ModChart);
 		var resultStr:String = Lua.tostring(lua, result);
 		if(resultStr != null && result != 0) {
-			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA script!');
+			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA ModChart!');
 			trace('Error on .LUA ModChart! ' + resultStr);
 			lua = null;
 			return;
