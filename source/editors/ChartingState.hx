@@ -57,7 +57,15 @@ class ChartingState extends MusicBeatState
 		'Alt Animation',
 		'Hey!',
 		'Hurt Note',
-                'Instakill Note',
+        'Blammed Note',
+        'fullHeal Note',
+        'halfBlammed Note',
+        'halfHeal Note',
+        'Instakill Note',
+        'medHeal Note',
+        'Poison Note',
+        'smaHeal Note',
+        'Static Note',
 		'GF Sing',
 		'No Animation'
 	];
