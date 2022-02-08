@@ -73,5 +73,5 @@ jobs:
           
       - uses: actions/upload-artifact@v2
         with:
-          name: Soul Engine build
+          name: Android Build CI
           path: export/release/android/bin/app/build/outputs/apk/debug
