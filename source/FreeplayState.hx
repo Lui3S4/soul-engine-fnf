@@ -278,7 +278,7 @@ class FreeplayState extends MusicBeatState
 			vocals.play();
 			vocals.persist = true;
 			vocals.looped = true;
-			vocals.volume = 0.7;
+			vocals.volume = 0.0;
 			instPlaying = curSelected;
 		}
 		else #end if (accepted)
