@@ -48,15 +48,15 @@ class EditorLua {
 		//trace('Lua version: ' + Lua.version());
 		//trace("LuaJIT version: " + Lua.versionJIT());
 
-		var result:Dynamic = LuaL.dofile(lua, ModChart);
+		var result:Dynamic = LuaL.dofile(lua, modchart);
 		var resultStr:String = Lua.tostring(lua, result);
 		if(resultStr != null && result != 0) {
-			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA ModChart!');
-			trace('Error on .LUA ModChart! ' + resultStr);
+			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA modchart!');
+			trace('Error on .LUA modchart! ' + resultStr);
 			lua = null;
 			return;
 		}
-		trace('Lua file loaded succesfully:' + ModChart);
+		trace('Lua file loaded succesfully:' + modchart);
 
 		var curState:Dynamic = FlxG.state;
 		lePlayState = curState;
