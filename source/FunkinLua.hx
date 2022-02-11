@@ -53,16 +53,16 @@ class FunkinLua {
 		//trace('Lua version: ' + Lua.version());
 		//trace("LuaJIT version: " + Lua.versionJIT());
 
-		var result:Dynamic = LuaL.dofile(lua, modchart);
+		var result:Dynamic = LuaL.dofile(lua, script);
 		var resultStr:String = Lua.tostring(lua, result);
 		if(resultStr != null && result != 0) {
-			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA modchart!');
-			trace('Error on .LUA modchart! ' + resultStr);
+			lime.app.Application.current.window.alert(resultStr, 'Error on .LUA script!');
+			trace('Error on .LUA script! ' + resultStr);
 			lua = null;
 			return;
 		}
-		scriptName = modchart;
-		trace('Lua file loaded succesfully:' + modchart);
+		scriptName = modcharted;
+		trace('Lua file loaded succesfully:' + script);
 
 		#if (haxe >= "4.0.0")
 		accessedProps = new Map();
