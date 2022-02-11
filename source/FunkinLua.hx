@@ -61,7 +61,7 @@ class FunkinLua {
 			lua = null;
 			return;
 		}
-		scriptName = modcharted;
+		scriptName = script;
 		trace('Lua file loaded succesfully:' + script);
 
 		#if (haxe >= "4.0.0")
