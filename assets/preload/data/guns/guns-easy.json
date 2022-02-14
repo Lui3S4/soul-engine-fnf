@@ -2990,15 +2990,6 @@
 				"mustHitSection": true
 			},
 			{
-				"lengthInSteps": 16,
-				"sectionNotes": [],
-				"typeOfSection": 0,
-				"altAnim": false,
-				"mustHitSection": true,
-				"changeBPM": false,
-				"bpm": 185
-			},
-			{
 				"sectionNotes": [],
 				"typeOfSection": 0,
 				"lengthInSteps": 16,
@@ -3017,8 +3008,7 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gf-tankmen",
-		"player3": "gf-tankmen",
+		"player3": "gf-tankman",
 		"song": "Guns",
 		"stage": "tank",
 		"needsVoices": true,
