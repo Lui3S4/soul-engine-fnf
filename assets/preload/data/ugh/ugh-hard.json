@@ -178,7 +178,7 @@
 						5625,
 						2,
 						0,
-						"Alt Animation"
+						true
 					]
 				],
 				"mustHitSection": false
@@ -2984,9 +2984,18 @@
 				"mustHitSection": true
 			},
 			{
-				"lengthInSteps": 16,
 				"sectionNotes": [],
 				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 160
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
 				"altAnim": false,
 				"mustHitSection": true,
 				"changeBPM": false,
@@ -3009,6 +3018,15 @@
 				"mustHitSection": true,
 				"changeBPM": false,
 				"bpm": 160
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 160,
+				"changeBPM": false,
+				"mustHitSection": true
 			},
 			{
 				"sectionNotes": [],
@@ -3029,10 +3047,8 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gf-tankmen",
-		"player3": "gf-tankmen",
+		"player3": "gf-tankman",
 		"song": "Ugh",
-		"arrowSkin": "",
 		"stage": "tank",
 		"needsVoices": true,
 		"validScore": true,
