@@ -66,6 +66,8 @@ class ChartingState extends MusicBeatState
         'Poison Note',
         'smaHeal Note',
         'Static Note',
+        'Rocket Note',
+        'Special Sing',
 		'GF Sing',
 		'No Animation'
 	];
