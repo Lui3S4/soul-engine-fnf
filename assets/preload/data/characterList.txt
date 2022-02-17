@@ -20,5 +20,12 @@ spirit
 bf-pixel-opponent
 pico-player
 picospeaker
-Aloe
-Nene
+BFTordCutscene
+DEdd
+Edd
+EddSide
+EddTordCutscene
+SlideBF
+SlideEdd
+Tord
+Tord2
